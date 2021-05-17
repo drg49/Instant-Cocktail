@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+#ing-list {
+  display: flex;
+  max-width: 600px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#ing-item {
+  list-style: none;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h4 {
+  width: 320px;
+  text-align: left;
+  margin-top: 24px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  padding-left: 4px;
+  padding-bottom: 1px;
+}
+
+#list {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+#item {
+  list-style: none;
+  text-align: left;
+  padding-left: 5px;
+  line-height: 25px;
+} 
+
+#drink-card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  width: 370px;
+  margin: 10px;
+}
+
+#drink-img {
+  width: 198px;
+  border-right: 1px solid;
+}
+
+#drink-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#drink-thumb {
+  width: 250px;
+}
+
+#drink-title {
+  padding-right: 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  max-width: 810px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
