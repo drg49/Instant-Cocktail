@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+body {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(90deg, #8EC5FC 0%, #E0C3FC 100%);
+  
+}
+
 #ing-list {
   display: flex;
   max-width: 900px;
@@ -34,7 +40,7 @@ h4 {
   text-align: left;
   margin-top: 24px;
   margin: 0 auto;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(255, 157, 189);
   padding-left: 4px;
   padding-bottom: 1px;
 }
@@ -43,7 +49,7 @@ h4 {
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(255, 157, 189);
 }
 
 #item {
@@ -60,6 +66,11 @@ h4 {
   border-radius: 4px;
   width: 370px;
   margin: 10px;
+  background-color: lightblue;
+}
+
+#drink-card:hover {
+  cursor:pointer;
 }
 
 #drink-img {
