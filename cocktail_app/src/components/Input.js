@@ -4,7 +4,7 @@ const Input = (props) => {
 
     return  (
     <>
-      <input type="text" onChange={props.handleChange}></input>
+      <input type="text" onChange={props.handleChange} placeholder="Search an ingredient..."></input>
     </>
     )
     

@@ -4,17 +4,29 @@
 
 #ing-list {
   display: flex;
-  max-width: 600px;
+  max-width: 900px;
   flex-wrap: wrap;
+  padding: 0px;
   margin: 0 auto;
   text-align: left;
+  justify-content: center;
 }
 
 #ing-item {
   list-style: none;
-  width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 168px;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid;
+  margin-left: 24px;
+  margin-right: 24px;
+  transition: 150ms;
+}
+
+#ing-item:hover {
+  background-color: rgb(255, 157, 189);
+  cursor: pointer
 }
 
 h4 {
@@ -44,14 +56,15 @@ h4 {
 #drink-card {
   display: flex;
   justify-content: space-between;
-  border: 1px solid;
+  border: 2px solid rgb(211, 0, 123);
+  border-radius: 4px;
   width: 370px;
   margin: 10px;
 }
 
 #drink-img {
   width: 198px;
-  border-right: 1px solid;
+  border-right: 2px solid rgb(211, 0, 123);
 }
 
 #drink-flex {
@@ -70,10 +83,16 @@ h4 {
 
 a {
   text-decoration: none;
+  color:black;
+  cursor: default;
 }
 
 p {
   max-width: 810px;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+input {
+  margin-bottom: 13px;
 }
