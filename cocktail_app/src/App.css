@@ -109,6 +109,10 @@ a {
   cursor: default;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 p {
   max-width: 810px;
   margin: 0 auto;
