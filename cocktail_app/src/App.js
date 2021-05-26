@@ -3,11 +3,13 @@ import './App.css';
 import Main from './components/Main'
 import DrinkPage from './pages/DrinkPage'
 import IngredientFilterPage from './pages/IngredientFilterPage'
+import Header from './components/Header'
 import {Route, Switch} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Switch>
         <Route exact path="/">
           <Main />

@@ -8,6 +8,17 @@ body {
   
 }
 
+#header {
+  background-color: blueviolet;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 #ing-list {
   display: flex;
   max-width: 900px;
@@ -106,4 +117,12 @@ p {
 
 input {
   margin-bottom: 13px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgb(100, 100, 100)
 }
