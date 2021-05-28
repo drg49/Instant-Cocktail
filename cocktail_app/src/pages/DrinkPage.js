@@ -1,4 +1,9 @@
 import { useEffect, useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom"
+
+const backBtn = <FontAwesomeIcon icon={faArrowLeft} size="1x"/>
 
 const DrinkPage = (props) => {
     const drink = props.match.params.drink
@@ -18,6 +23,7 @@ const DrinkPage = (props) => {
     const loaded = () => {
         return (
             <>
+            <Link to="/" id="home"><span>{backBtn}</span></Link>
                 <h3>{singleDrink.strDrink}</h3>
                 <img id="drink-thumb" src={singleDrink.strDrinkThumb} />
                 <h4>Ingredients</h4>

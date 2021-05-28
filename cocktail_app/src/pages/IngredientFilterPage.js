@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react"
 import IngredientCards from "../components/IngredientCards"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom"
+
+const backBtn = <FontAwesomeIcon icon={faArrowLeft} size="1x"/>
 
 const IngredientFilterPage = (props) => {
     const ingredient = props.match.params.ingredient
@@ -27,6 +32,7 @@ const IngredientFilterPage = (props) => {
     const loaded = () => {
         return (
             <>
+            <Link to="/" id="home"><span>{backBtn}</span></Link>
             <h2 id="page-title">Cocktails Containing {ingredient}</h2>
             <div id="drink-flex">
                 {drinks}
