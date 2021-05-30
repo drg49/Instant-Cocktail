@@ -3,6 +3,7 @@ import IngredientCards from "../components/IngredientCards"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom"
+import load from "../loading.gif"
 
 const backBtn = <FontAwesomeIcon icon={faArrowLeft} size="1x"/>
 
@@ -42,7 +43,7 @@ const IngredientFilterPage = (props) => {
     }
 
     const loading = () => {
-        return <h2>Loading...</h2>
+        return <img id="load" src={load} alt="The page is loading"/>
     }
 
     return drinks ? loaded() : loading()
